@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eureka.co Home-Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+
+body {
+            padding-top: 56px;
+        }
+
+        .reveal-text {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 1s, transform 1s;
+        }
+
+        .revealed {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+      .gradient-background {
+  background: linear-gradient(300deg,  #58f2bb,#0db879, #10d48e, #28efa8);
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+
+@font-face {
+        font-family: 'SF Pro Display';
+        src: local('SF Pro Display'), local('SFProDisplay-Regular'), url('/path/to/SF-Pro-Display-Regular.woff2') format('woff2');
+        font-weight: normal;
+        font-style: normal;
+    }
+
+    /* Apply the custom font to your heading */
+    .sf-pro {
+        font-family: 'SF Pro Display', sans-serif;
+    }
+
+    .custom-outline-btn {
+        color: #053f2a;
+        border-color: #053f2a;
+    }
+
+    .custom-outline-btn:hover {
+        color: #fff; /* Change text color on hover if needed */
+        background-color: #053f2a;
+        border-color: #053f2a;
+    }
+
+    .service-button {
+        width: 100%;
+        height: 200px;
+        background-color: #053f2a;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+        transition: background-color 0.3s ease-in-out;
+        cursor: pointer;
+    }
+
+    .service-button:hover {
+        background-color: #04a763; /* Change color on hover */
+    }
+
+    .service-text {
+        margin: 0;
+        font-size: 18px;
+    }
+    </style>
+</head>
+<body>
+
+    
+    <section id="title" >
+        <div class="container">
+            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+              <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 link-body-emphasis text-decoration-none">
+                <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"></use></svg>
+              </a>
+              <div class="d-flex align-items-center">
+                <img src="./eureka.png" height="100px" class="mb-lg-0" alt="logo">
+                <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                   <li class="nav-item"><a href="#" class="nav-link px-2 link-secondary">Home</a></li>
+                   <li class="nav-item"><a href="#" class="nav-link px-2 link-body-emphasis">About</a></li>
+                   <li class="nav-item"><a href="#" class="nav-link px-2 link-body-emphasis">Contact</a></li>
+                   <li class="nav-item"><a href="#" class="nav-link px-2 link-body-emphasis">Book a Tutor</a></li>
+                   <li class="nav-item"><a href="#" class="nav-link px-2 link-body-emphasis">About</a></li>
+                </ul>
+             </div>
+             
+      
+              <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+                <input type="search" class="form-control" placeholder="Search..." aria-label="Search" data-listener-added_327d41bd="true">
+              </form>
+      
+              <div class="dropdown text-end">
+                <a href="#" class="d-block link-body-emphasis text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                  <img src="https://github.com/mdo.png" alt="mdo" width="32" height="32" class="rounded-circle">
+                </a>
+                <ul class="dropdown-menu text-small">
+                  <li><a class="dropdown-item" href="#">New project...</a></li>
+                  <li><a class="dropdown-item" href="#">Settings</a></li>
+                  <li><a class="dropdown-item" href="#">Profile</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Sign out</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+    </section>
+
+    <section id="hero-section" class="gradient-background">
+      <div class="px-4 pt-5 my-5 text-center border-bottom">
+        <h1 class="display-4 fw-bold text-white sf-pro">Welcome to Our Campus Service</h1>
+        <div class="col-lg-6 mx-auto">
+          <p class="lead mb-4 text-white sf-pro">Your Path to Success Starts Here</p>
+          <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
+            <button type="button" class="btn btn-primary btn-lg px-4 me-sm-3" style="background-color: #053f2a; outline: none;">Enroll as Student</button>
+
+            <button type="button" class="btn btn-outline-light btn-lg px-4 custom-outline-btn">Enroll as Tutor</button>
+          </div>
+        </div>
+        <div class="overflow-hidden" style="max-height: 30vh;">
+          <div class="container px-5">
+            <img src="./eureka.png" class="img-fluid   shadow-lg mb-4" alt="Example image" width="300" height="200" loading="lazy">
+          </div>
+        </div>
+        <section id="about-section" class="bg-light text-dark py-5 gradient-background">
+          <div class="container">
+              <div class="row">
+                  <div class="col-lg-8 mx-auto text-center">
+                      <h2 class="display-4 fw-bold mb-4 text-white sf-pro reveal-text">About Our Campus Service</h2>
+                      <p class="lead mb-4 text-white sf-pro reveal-text">
+                        Welcome to Eureka, where innovation in education meets a passion for connecting minds. We don't just
+                        envision a world where education breaks free from classrooms—we're crafting it. Here at Eureka, we
+                        believe in a future where individuals don't just learn; they discover, they create, and they thrive.
+    
+                        In the realm of Eureka, we're not just connecting students and tutors; we're forging bonds that
+                        spark intellectual fireworks. It's not about internships; it's about transformative experiences that
+                        shape the architects of tomorrow. Our commitment goes beyond mere features; we're architects of an
+                        educational journey, sculpting a canvas where every stroke contributes to personal growth.
+    
+                        Eureka isn't just a platform; it's a testament to the belief that education is the cornerstone of a
+                        future where everyone reaches their zenith. Join us as we redefine the narrative, transcending the
+                        boundaries of conventional learning, and charting a course where potential knows no limits.
+                        Eureka—where your learning journey takes flight.
+                    </p>
+                  </div>
+              </div>
+          </div>
+      </section>
+      </div>
+      
+      <section id="services-section" class="bg-light text-dark py-5 gradient-background">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-lg-12">
+                    <h2 class="display-4 fw-bold mb-4 text-white sf-pro">Our Services</h2>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+              <div class="col-lg-2 mb-4">
+                  <div class="service-button">
+                      <div class="d-flex flex-column align-items-center justify-content-center">
+                          <h3 class="service-text text-center">
+                              One-on-One Tutoring
+                              Receive individualized attention from our expert tutors
+                          </h3>
+                      </div>
+                  </div>
+              </div>
+          
+              <div class="col-lg-2 mb-4">
+                  <div class="service-button d-flex align-items-center justify-content-center">
+                      <h3 class="service-text text-center">Online Classes
+                          Access our tutoring services from the comfort of your home.
+                      </h3>
+                  </div>
+              </div>
+          
+              <div class="col-lg-2 mb-4">
+                  <div class="service-button d-flex align-items-center justify-content-center">
+                      <h3 class="service-text text-center">Test Prep
+                          Prepare for exams with our test prep courses and materials.
+                      </h3>
+                  </div>
+              </div>
+          
+              <div class="col-lg-2 mb-4">
+                  <div class="service-button d-flex align-items-center justify-content-center">
+                      <h3 class="service-text text-center">Internship Placement
+                          Receive individualized attention from our expert tutors.
+                      </h3>
+                  </div>
+              </div>
+          
+              <div class="col-lg-2 mb-4">
+                  <div class="service-button d-flex align-items-center justify-content-center">
+                      <h3 class="service-text text-center">Personalized Timetable
+                          Access our tutoring services from the comfort of your home.
+                      </h3>
+                  </div>
+              </div>
+          </div>
+          
+        </div>
+    </section>
+      
+    </section>
+
+    <section id="footer">
+      <div class="container">
+        <footer class="py-5">
+          <div class="row">
+            <div class="col-6 col-md-2 mb-3">
+              <h5>Section</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+              </ul>
+            </div>
+      
+            <div class="col-6 col-md-2 mb-3">
+              <h5>Section</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+              </ul>
+            </div>
+      
+            <div class="col-6 col-md-2 mb-3">
+              <h5>Section</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+              </ul>
+            </div>
+      
+            <div class="col-md-5 offset-md-1 mb-3">
+              <form>
+                <h5>Subscribe to our newsletter</h5>
+                <p>Monthly digest of what's new and exciting from us.</p>
+                <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                  <label for="newsletter1" class="visually-hidden">Email address</label>
+                  <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+                  <button class="btn btn-primary" type="button">Subscribe</button>
+                </div>
+              </form>
+            </div>
+          </div>
+      
+          <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+            <p>© 2023 Eureka Covenant University. All rights reserved.</p>
+            <ul class="list-unstyled d-flex">
+              <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"></use></svg></a></li>
+              <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
+              <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a></li>
+            </ul>
+          </div>
+        </footer>
+      </div>
+    </section>
+  
+    <body data-spy="scroll" data-target="#navbar" data-offset="56"></body>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(window).on('scroll', function () {
+                $('.reveal-text').each(function () {
+                    const revealPosition = $(this).offset().top;
+                    const scrollPosition = $(window).scrollTop() + $(window).height();
+
+                    if (revealPosition < scrollPosition) {
+                        $(this).addClass('revealed');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
